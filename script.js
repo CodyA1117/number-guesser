@@ -9,13 +9,14 @@ function generateTarget(){
 
 
 function compareGuesses(userGuess, computerGuess, secretNumber){
-    if(userGuess === secretNumber && computerGuess === secretNumber){
+    
         let humanDistance = Math.abs(userGuess - secretNumber)
         let computerDistance = Math.abs(computerGuess - secretNumber)
 
         return humanDistance <= computerDistance 
 
     }
+
 
 
 function updateScore(winner){
@@ -27,4 +28,10 @@ function updateScore(winner){
     }
 
 }
+
+function advanceRound(){
+    currentRoundNumber += 1;
+
 }
+
+
