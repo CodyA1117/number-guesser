@@ -16,4 +16,15 @@ function compareGuesses(userGuess, computerGuess, secretNumber){
         return humanDistance <= computerDistance 
 
     }
+
+
+function updateScore(winner){
+
+    if(winner === 'human'){
+        humanScore+= 1;
+    } else if (winner === 'computer') {
+        computerScore += 1;
+    }
+
+}
 }
